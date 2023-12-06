@@ -1,0 +1,212 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dhurjati', sans-serif;
+    color: white;
+    letter-spacing: 1.5px;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../IMGs/download\ \(1\).jpeg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+a:focus {
+    outline: none;
+}
+
+header {
+    background-color: rgba(34, 34, 34, .65);
+    border-radius: 3px;
+    width: 95%;
+    height: 5.5rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .img-con {
+    width: 15%;
+    height: 90%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-left: .5rem;
+}
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    margin-right: .5rem;
+    text-decoration: none;
+    color: white;
+    border: 1px solid orangered;
+    background-color: rgba(38, 38, 38, 0.5);
+    border-radius: 3px;
+    padding: .25rem;
+    letter-spacing: .5px;
+}
+header a:hover {
+    color: orangered;
+    border: none;
+    background-color: rgba(0, 0, 80, 0.65);
+}
+
+main {
+    background-color: rgba(34, 34, 34, .65);
+    border-radius: 3px;
+    width: 95%;
+    margin: .75rem auto;
+}
+
+main h3 {
+    text-align: center;
+    width: 70%;
+    margin: 1.25rem auto;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+main .h3A {
+    padding-top: 1rem;
+}
+main .h3B {
+    padding-bottom: 1rem;
+}
+
+main .button {
+    background-image: url("../IMGs/pexels-leon-ardho-1552242.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 3px;
+    width: 95%;
+    height: 20rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid orangered;
+    background-color: rgba(38, 38, 38, 0.5);
+    border-radius: 5px;
+    padding: .25rem .5rem;
+    font-size: 2rem;
+}
+main a:hover {
+    color: orangered;
+    border: none;
+    background-color: rgba(0, 0, 80, 0.65);
+}
+
+footer {
+    background-color: rgba(34, 34, 34, .65);
+    border-radius: 3px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+
+footer .contact {
+    margin-left: .5rem;
+    line-height: 1.5;
+}
+footer h2, ul {
+    margin: 0;  
+}
+
+footer #bottom {
+    margin-right: .5rem;
+    text-decoration: none;
+    color: white;
+    border: 1px solid orangered;
+    background-color: rgba(38, 38, 38, 0.5);
+    border-radius: 3px;
+    padding: .25rem;
+}
+footer #bottom:hover {
+    color: orangered;
+    border: none;
+    background-color: rgba(0, 0, 80, 0.65);
+}
+
+footer .about {
+    margin-right: .5rem;
+    text-decoration: none;
+    color: white;
+    border: 1px solid orangered;
+    background-color: rgba(38, 38, 38, 0.5);
+    border-radius: 3px;
+    padding: .25rem;
+}
+footer .about:hover {
+    color: orangered;
+    border: none;
+    background-color: rgba(0, 0, 80, 0.65);
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        height: 6.5rem;
+    }
+    header h1 {
+        font-size: 5rem;
+    }
+    header a {
+        padding: .75rem;
+        font-size: 1.5rem;
+    }
+
+    main h3 {
+        margin: 2rem auto;
+        font-size: 1.75rem;
+    }
+    main .button {
+        height: 30rem;
+    }
+    main a {
+        padding: .5rem 1rem;
+        font-size: 2.5rem;
+    }
+    
+    footer .contact {
+        margin-left: .5rem;
+        line-height: 2;
+        font-size: 1.5rem;
+    }   
+    footer #bottom {
+        padding: .75rem;
+        font-size: 1.5rem;
+    }
+    footer .about {
+        padding: .75rem;
+        font-size: 1.5rem;
+    }    
+}

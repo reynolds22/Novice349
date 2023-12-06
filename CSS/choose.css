@@ -1,0 +1,25 @@
+body {
+    position: relative;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../IMGs/download\ \(1\).jpeg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}  
+
+.up {
+    background-image: url("../IMGs/pexels-cottonbro-studio-6701941.jpg");
+}
+
+.low {
+    background-image: url("../IMGs/pexels-leon-ardho-1552106.jpg");
+}
